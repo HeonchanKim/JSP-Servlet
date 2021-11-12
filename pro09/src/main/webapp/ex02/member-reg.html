@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Membership Registration Form</title>
+	<style>
+		#reg > p > label {
+			display: inline-block;
+			width: 90px;
+			padding-left: 1em;
+			text-align: right;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="member-reg.js"></script>
+</head>
+<body>
+	<h1>Membership Registration Form</h1>
+	
+	<form action="member.jsp" method="post" id="reg">
+		<input type="hidden" name="checkedDuplicate" value="false">
+		<p>
+			<label>Account: </label> <input type="text" name="account">
+			<input type="button" name="check" value="Check duplicate" id="check-duplicate">
+		</p>
+		<p><label>Password: </label> <input type="password" name="passwd"></p>
+		<p><label>Name: </label> <input type="text" name="name"></p>
+		<p><label>Email: </label> <input type="text" name="email"></p>
+		<p><input type="submit" name="submit" value="Register"></p>
+	</form>
+</body>
+</html>
